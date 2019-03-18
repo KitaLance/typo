@@ -55,6 +55,14 @@ And /^I am logged into the admin panel$/ do
   end
 end
 
+# Scenario: Allow admin to edit an existing category
+Given /^that TestName categories are added$/ do
+    Category.create!({:name => 'TestName',
+                    :permalink => 'testname',
+                    :keywords => 'TestKeyworkd1, TestKeyworkd2, TestKeyworkd3',
+                    :description => 'This is a test description'})
+end
+
 # Single-line step scoper
 When /^(.*) within (.*[^:])$/ do |step, parent|
   with_scope(parent) { When step }

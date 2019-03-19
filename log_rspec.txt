@@ -1,0 +1,7 @@
+..
+
+1 deprecation warning total
+
+Finished in 0.2949 seconds
+2 examples, 0 failures
+Coverage report generated for RSpec to /home/ec2-user/environment/typo/coverage. 11085 / 15326 LOC (72.33%) covered.
